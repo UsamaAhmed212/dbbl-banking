@@ -98,13 +98,23 @@ img{
     box-shadow: none;
 }
 
-/* Top Header Area Css */
+/* Header >Top Header Area Css */
+#header {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+    height: auto;
+}
+
+/* Header >Top Header Area Css */
 #header .top-header{
     background-color: #65BCB9;
     padding:12px 0px  12px 0px;
 }
 
-/* Top Header Area > Header Left Content Css */
+/* Header > Top Header Area > Header Left Content Css */
 #header .top-header .header-left-content p{
     color: #ffffff;
     margin: 0;
@@ -114,7 +124,7 @@ img{
 }
 
 
-/* Top Header Area > Header Right Content Css */
+/* Header > Top Header Area > Header Right Content Css */
 #header .top-header .header-right-content ul {
     text-align: right;
     margin-bottom: 0;
@@ -265,20 +275,13 @@ img{
     background-color: transparent;
 }
 
-/* Banner Area Css */
-/* #banner.full-screen {
-    height: 100vh;
+/* Banner Area  Css */
+#banner {
+    position: relative;
+    background: transparent url(../../images/shape-bg.png) left bottom no-repeat;
+    padding: 210px 0px  100px 0px;
+    z-index: 1;
 }
-
-#banner .banner-section {
-    overflow: hidden;
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
-    z-index: 2;
-    right: 0;
-} */
 
 
 /* Banner Area > Banner Content Css */
@@ -363,13 +366,14 @@ img{
     visibility: visible;
 }
 
-/* Banner Area  Css */
-#banner {
-    padding-top: 90px;
+
+/* Banner Area > banner-image-circle Css */
+#banner .banner-image-circle {
+    position: relative;
+    text-align: center;
 }
 
-
-/* Banner Area > banner-image-circle > Banner Image */
+/* Banner Area > banner-image-circle > Banner Image  Css*/
 #banner .banner-image-circle .banner-image {
     position: relative;
 }
@@ -383,22 +387,24 @@ img{
 
 /* Banner Area > banner-image-circle > Banner Image > Banner- Image Center > Img Css */
 #banner .banner-image-circle .banner-image .banner-image-center img {
-    width: 450px;
-    height: 300px;
+    width: 470px;
+    height: 320px;
 }
 
 /* Banner Area > banner-image-circle > Banner Image > Banner- Image Left Css */
 #banner .banner-image-circle .banner-image .banner-image-left {
     position: absolute;
     top: 28%;
-    left: 6%;
+    left: 2%;
+    box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
 }
 
 /* Banner Area > banner-image-circle > Banner Image > Banner- Image Right Css */
 #banner .banner-image-circle .banner-image .banner-image-right {
     position: absolute;
     top: 28%;
-    right: 0%;
+    right: -6%;
+    box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
 }
 
 
@@ -477,3 +483,70 @@ img{
     }
 }
 
+
+/* Banner Area > banner-image-circle > Spread Circle Css */
+#banner .banner-image-circle .spread-circle {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -8%;
+    z-index: -1;
+}
+
+#banner .banner-image-circle .spread-circle span {
+    display: inline-block;
+    width: 90px;
+    height: 90px;
+    line-height: 92px;
+    background-color: teal;
+    border-radius: 50%;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 20px 70px rgb(0 0 0 / 20%);
+}
+
+#banner .banner-image-circle .spread-circle span::before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: -1;
+        bottom: 0;
+        left: 0;
+        border-radius: 50%;
+        border: 1px solid teal;
+        animation: spread-circle 2s linear infinite;
+    }
+
+#banner .banner-image-circle .spread-circle span::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    bottom: 0;
+    left: 0;
+    border-radius: 50%;
+    border: 1px solid teal;
+    animation: spread-circle 2s linear 1s infinite;
+}
+
+@keyframes spread-circle {
+    0% {
+        transform: scale(1)
+    }
+
+    75% {
+    
+        transform: scale(1.75);
+        opacity: 1
+    }
+
+    100% {
+        transform: scale(2);
+        opacity: 0
+    }
+}
