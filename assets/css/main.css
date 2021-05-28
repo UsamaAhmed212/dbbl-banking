@@ -33,6 +33,17 @@
 }
 
 @font-face {
+    font-family: "Roboto";
+    src:    url("../fonts/roboto/Raleway-SemiBold.ttf");
+    src:    url("../fonts/roboto/Roboto-SemiBold.eot?#iefix") format('embedded-opentype'),
+            url("../fonts/roboto/Roboto-SemiBold.woff2") format('woff2'),
+            url("../fonts/roboto/Roboto-SemiBold.woff") format('woff'),
+            url("../fonts/roboto/Roboto-SemiBold.ttf") format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
     font-family: "Raleway";
     src:    url("../fonts/raleway/Raleway-Regular.eot");
     src:    url("../fonts/raleway/Raleway-Regular.eot?#iefix") format('embedded-opentype'),
@@ -65,6 +76,7 @@ h1, h2, h3, h4, h5, h6,
 #header .navbar-area .navbar .navbar-nav,
 #banner .banner-content p {
     font-family: "Raleway", sans-serif;
+    font-weight: 600;
 }
 
 a {
@@ -550,3 +562,167 @@ img{
         opacity: 0
     }
 }
+
+/* Service Area  Css */
+#service {
+    padding: 70px 0px;
+}
+
+#service .service-item {
+    padding: 10px;
+}
+
+
+/* Service Area > .service-item > .single-information-box  Css */
+#service .service-item .single-information-box {
+    position: relative;
+    padding-left: 70px;
+    border: 1px solid #eee;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    
+}
+
+
+/* Service Area > .service-item > .single-information-box > .icon  Css */
+#service .service-item .single-information-box .icon {
+    background-color: #ee0979;
+    width: 40px;
+    height: 40px;
+    line-height: 45px;
+    text-align: center;
+    border-radius: 50%;
+    color: #ffffff;
+    position: absolute;
+    left: 15px;
+    top: 16px;
+}
+
+#service .service-item .single-information-box h3 {
+    margin-bottom: 0;
+    font-size: 20px;
+}
+
+#service .service-item .single-information-box p {
+    line-height: initial;
+    font-size: 14px;
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+
+#service .service-item .single-information-box .icon i::before {
+    font-size: 18px;
+}
+
+/* Service Area > .service-item > .single-information-box > .btn-box  Css */
+#service .service-item .single-information-box.pl-0 {
+    padding: 7px 0;
+    text-align: center;
+}
+
+#service .service-item .single-information-box .btn-box .app-store-btn i,
+#service .service-item .single-information-box .btn-box .play-store-btn i {
+    position: absolute;
+    left: 8px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+#service .service-item .single-information-box .btn-box .app-store-btn span,
+#service .service-item .single-information-box .btn-box .play-store-btn span {
+    display: block;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+#service .service-item .single-information-box .btn-box .app-store-btn i::before,
+#service .service-item .single-information-box .btn-box .play-store-btn i::before {
+    font-size: 20px;
+}
+
+/* Service Area > .service-item > .single-information-box > .btn-box > .app-store-btn  Css */
+#service .service-item .single-information-box .btn-box .app-store-btn {
+    border-radius: 3px;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    color: #ffffff;
+    padding: 10px 15px 10px 35px;
+    font-size: 11px;
+}
+
+#service .service-item .single-information-box .btn-box .app-store-btn::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 3px;
+    z-index: -1;
+    background: linear-gradient(90deg, #ee0979 0%, #ff6a00 100%);
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+#service .service-item .single-information-box .btn-box .app-store-btn::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 3px;
+    z-index: -1;
+    background: linear-gradient(135deg, #23bdb8 0%, #43e794 100%);
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* Service Area > .service-item > .single-information-box > .btn-box > .play-store-btn  Css */
+#service .service-item .single-information-box .btn-box .play-store-btn {
+    margin-left: 5px;
+    border-radius: 3px;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    color: #ffffff;
+    padding: 10px 15px 10px 35px;
+    font-size: 11px;
+}
+
+
+#service .service-item .single-information-box .btn-box .play-store-btn::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 3px;
+    z-index: -1;
+    background: linear-gradient(90deg, #ee0979 0%, #ff6a00 100%);
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+
+#service .service-item .single-information-box .btn-box .play-store-btn::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 3px;
+    z-index: -1;
+    background: linear-gradient(135deg, #23bdb8 0%, #43e794 100%);
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
