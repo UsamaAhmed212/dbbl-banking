@@ -757,7 +757,7 @@ img{
     text-align: end;
 }
 
-#biometric-account .biometric-area .biometric-content .biometric-heading h1 {
+#biometric-account .biometric-area .biometric-content .biometric-heading h2 {
     margin-bottom: 0;
     font-size: 40px;
 }
@@ -803,4 +803,95 @@ img{
     -webkit-text-fill-color: transparent;
 }
 
+
+
+/* Section Title Css */
+.section-title {
+    text-align: center;
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+}
+.section-title h2 {
+    margin-bottom: 0;
+    font-size: 40px;
+}
+
+.section-title .bar {
+    height: 5px;
+    width: 90px;
+    background: #cdf1d8;
+    margin: 15px auto 20px;
+    position: relative;
+    border-radius: 30px;
+}
+
+.section-title .bar::before {
+    background: #43e794 ;
+}
+
+.section-title .bar::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: -2.6px;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    animation: MOVE-BG 5s linear infinite;
+}
+
+@keyframes MOVE-BG {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(88px);
+    }
+}
+
+/*  Remittances Paid Section Css */
+#remittances-paid {
+    padding-top: 90px;
+}
+
+#remittances-paid .remittances-content .remittances-item {
+    margin: 10px 0;
+    align-items: center;
+    box-shadow: rgb(234 227 227) 0px 2px 10px 0px;
+}
+
+#remittances-paid .remittances-area .remittances-content h2 {
+    margin-bottom: 0;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/*  Remittances Paid Section > .remittances-area > .remittances-content Css */
+#remittances-paid .remittances-area .remittances-content .remittances-item-header {
+    margin: 10px 0;
+    box-shadow: rgb(234 227 227) 0px 2px 10px 0px;
+}
+
+#remittances-paid .remittances-area .remittances-content .remittances-item-header h2{
+    padding: 10px 0;
+    text-align: center;
+}
+
+#remittances-paid .remittances-area .remittances-item .remittances-sending-country h2 {
+    text-align: center;
+}
+
+#remittances-paid .remittances-area .remittances-content .exchange-company-logo {
+    width: 110px;
+    height: 45px;
+    margin: 0 auto;
+}
+
+#remittances-paid .remittances-area .remittances-content .exchange-company-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: scale-down;
+}
 
