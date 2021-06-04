@@ -933,3 +933,36 @@ img{
     text-align: center;
 }
 
+
+/* ATM Cards Services Charges */
+#atm-cards-service-charge {
+    padding-top: 90px;
+}
+
+#atm-cards-service-charge .atm-cards-service-charge-content .atm-cards-service-charge-header {
+    text-align: center;
+    margin: 10px 0;
+    box-shadow: rgb(234 227 227) 0px 2px 10px 0px;
+}
+
+#atm-cards-service-charge .atm-cards-service-charge-content .atm-cards-service-charge-header h2 {
+    margin-bottom: 0;
+    font-size: 22px;
+    padding: 10px 0;
+}
+
+#atm-cards-service-charge .atm-cards-service-charge-content .atm-cards-service-charge-item {
+    margin: 10px 0;
+    padding: 10px 0;
+    box-shadow: rgb(234 227 227) 0px 2px 10px 0px;
+}
+
+#atm-cards-service-charge .atm-cards-service-charge-content .atm-cards-service-charge-item h2 {
+    margin-bottom: 0;
+    font-size: 20px;
+}
+
+#atm-cards-service-charge .atm-cards-service-charge-item .charge-amount {
+    text-align: center;
+}
+
