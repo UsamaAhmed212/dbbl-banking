@@ -895,3 +895,41 @@ img{
     object-fit: scale-down;
 }
 
+
+/*  Banking Service Charge Css */
+#banking-service-charge {
+    padding-top: 90px;
+}
+/* Banking Service Charge > .banking-service-content > .banking-service-header Css  */
+#banking-service-charge .banking-service-content .banking-service-header {
+    text-align: center;
+    margin: 10px 0;
+    box-shadow: rgb(234 227 227) 0px 2px 10px 0px;
+}
+
+#banking-service-charge .banking-service-content .banking-service-header h2 {
+    margin-bottom: 0;
+    font-size: 25px;
+}
+
+#banking-service-charge .banking-service-content .banking-service-header span {
+    font-size: 15px;
+}
+
+/* Banking Service Charge > .banking-service-content > .banking-service-item Css  */
+#banking-service-charge .banking-service-content .banking-service-item {
+    margin: 10px 0;
+    padding: 10px 0;
+    box-shadow: rgb(234 227 227) 0px 2px 10px 0px;
+}
+
+#banking-service-charge .banking-service-content .banking-service-item h2 {
+    margin-bottom: 0;
+    font-size: 20px;
+}
+
+#banking-service-charge .banking-service-content .banking-service-item .same-territory h2,
+#banking-service-charge .banking-service-content .banking-service-item .other-territory h2 {
+    text-align: center;
+}
+
