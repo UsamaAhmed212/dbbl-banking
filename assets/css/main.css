@@ -682,6 +682,11 @@ img{
     visibility: hidden;
 }
 
+#service .service-item .single-information-box .btn-box .app-store-btn:hover::after {
+    opacity: 1;
+    visibility: visible;
+}
+
 /* Service Area > .service-item > .single-information-box > .btn-box > .play-store-btn  Css */
 #service .service-item .single-information-box .btn-box .play-store-btn {
     margin-left: 5px;
@@ -707,10 +712,7 @@ img{
     background: linear-gradient(90deg, #ee0979 0%, #ff6a00 100%);
     -webkit-transition: 0.5s;
     transition: 0.5s;
-    opacity: 0;
-    visibility: hidden;
 }
-
 
 #service .service-item .single-information-box .btn-box .play-store-btn::after {
     content: '';
@@ -726,6 +728,10 @@ img{
     transition: 0.5s;
 }
 
+#service .service-item .single-information-box .btn-box .play-store-btn:hover::after {
+    opacity: 0;
+    visibility: hidden;
+}
 
 /* Biometric Account section Css */
 #biometric-account {
