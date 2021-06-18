@@ -857,6 +857,13 @@ img{
     }
 }
 
+.section-title p {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+}
+
 /* Secure Banking Through Finger Area */
 #secure-banking-through-finger {
     padding-top: 90px;
@@ -913,7 +920,7 @@ img{
     margin: 0 auto;
     position: absolute;
     top: 60%;
-    right: 5%;
+    right: 3%;
 }
 
 #secure-banking-through-finger .secure-banking-through-finger-content .secure-banking-through-finger-items-right .banking-through-finger-bottom-image {
@@ -1073,3 +1080,103 @@ img{
     text-align: center;
 }
 
+/* Bank Cards Section Css */
+#bank-cards {
+    padding-top: 90px;
+}
+
+#bank-cards .bank-cards-item-wrapper .bank-cards-item {
+    width: 20%;
+    padding: 10px;
+    float: left;
+}
+
+#bank-cards .bank-cards-item .bank-cards-content {
+    padding: 4px;
+    line-height: 1.42857143;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+}
+
+#bank-cards .bank-cards-item .bank-cards-content .card-thumbnail a {
+    display: block;
+    overflow: hidden;
+    text-decoration: none;
+    max-width: 100%;
+    position: relative;
+}
+
+#bank-cards .bank-cards-item .bank-cards-content .card-thumbnail img {
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+    border-radius: 3px;
+}
+
+#bank-cards .bank-cards-item .bank-cards-content .card-thumbnail a img {
+	-webkit-transition: all 0.2s linear;
+	-moz-transition: all 0.2s linear;
+	transition: all 0.2s linear;
+	border-radius: 3px;
+	position: relative;
+}
+
+#bank-cards .bank-cards-item .bank-cards-content .card-thumbnail a:hover img {
+	-webkit-transform: scale(1.1, 1.1);
+	-moz-transform: scale(1.1, 1.1);
+	-ms-transform: scale(1.1, 1.1);
+	-o-transform: scale(1.1, 1.1);
+	transform: scale(1.1, 1.1);
+}
+
+#bank-cards .bank-cards-item .card-thumbnail .thumbnail-info .thumbnail-title{
+    position: absolute;
+    width: 100%;
+    bottom: 5px;
+    left: 0px;
+    font-size: 12px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: #FFF;
+    font-weight: 700;
+    font-family: "Raleway", sans-serif;
+    background: linear-gradient(135deg, #8647b4c4 0%, #94a0d880 100%);
+    padding: 6px 7px 18px 9px;
+    z-index: 2;
+    transition: all 0.4s ease-in;
+    opacity: 0;
+}
+
+#bank-cards .bank-cards-item .card-thumbnail .thumbnail-info .thumbnail-type {
+    position: absolute;
+    bottom: 12px;
+    left: 10px;
+    font-size: 12px;
+    line-height: 12px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    color: #FFF;
+    font-weight: 700;
+    font-family: "Raleway", sans-serif;
+    background: linear-gradient(135deg, #23bdb8b0 0%, #43e794b3 100%);
+    padding: 7px 7px 5px 9px;
+    z-index: 2;
+    transition: all 0.5s ease-in;
+    opacity: 1;
+}
+
+#bank-cards .bank-cards-item .bank-cards-content .card-thumbnail:hover .thumbnail-title {
+    bottom: 20px;
+    opacity: 1;
+}
+
+#bank-cards .bank-cards-item .bank-cards-content .card-thumbnail:hover .thumbnail-type {
+    bottom: 10px;
+    opacity: 1;
+}
