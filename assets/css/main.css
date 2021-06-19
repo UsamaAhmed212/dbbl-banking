@@ -620,8 +620,8 @@ img{
     text-align: center;
 }
 
-#service .service-item .single-information-box .btn-box .app-store-btn i,
-#service .service-item .single-information-box .btn-box .play-store-btn i {
+.btn-box .app-store-btn i,
+.btn-box .play-store-btn i {
     position: absolute;
     left: 8px;
     top: 50%;
@@ -629,30 +629,30 @@ img{
     transform: translateY(-50%);
 }
 
-#service .service-item .single-information-box .btn-box .app-store-btn span,
-#service .service-item .single-information-box .btn-box .play-store-btn span {
+.btn-box .app-store-btn span,
+.btn-box .play-store-btn span {
     display: block;
     font-size: 15px;
     font-weight: 500;
 }
 
-#service .service-item .single-information-box .btn-box .app-store-btn i::before,
-#service .service-item .single-information-box .btn-box .play-store-btn i::before {
+.btn-box .app-store-btn i::before,
+.btn-box .play-store-btn i::before {
     font-size: 20px;
 }
 
 /* Service Area > .service-item > .single-information-box > .btn-box > .app-store-btn  Css */
-#service .service-item .single-information-box .btn-box .app-store-btn {
+.btn-box .app-store-btn {
     border-radius: 3px;
     display: inline-block;
     position: relative;
     z-index: 1;
     color: #ffffff;
     padding: 10px 15px 10px 35px;
-    font-size: 11px;
+    font-size: 12px;
 }
 
-#service .service-item .single-information-box .btn-box .app-store-btn::before {
+.btn-box .app-store-btn::before {
     content: '';
     position: absolute;
     left: 0;
@@ -666,7 +666,7 @@ img{
     transition: 0.5s;
 }
 
-#service .service-item .single-information-box .btn-box .app-store-btn::after {
+.btn-box .app-store-btn::after {
     content: '';
     position: absolute;
     left: 0;
@@ -682,13 +682,13 @@ img{
     visibility: hidden;
 }
 
-#service .service-item .single-information-box .btn-box .app-store-btn:hover::after {
+.btn-box .app-store-btn:hover::after {
     opacity: 1;
     visibility: visible;
 }
 
 /* Service Area > .service-item > .single-information-box > .btn-box > .play-store-btn  Css */
-#service .service-item .single-information-box .btn-box .play-store-btn {
+.btn-box .play-store-btn {
     margin-left: 5px;
     border-radius: 3px;
     display: inline-block;
@@ -696,11 +696,10 @@ img{
     z-index: 1;
     color: #ffffff;
     padding: 10px 15px 10px 35px;
-    font-size: 11px;
+    font-size: 12px;
 }
 
-
-#service .service-item .single-information-box .btn-box .play-store-btn::before {
+.btn-box .play-store-btn::before {
     content: '';
     position: absolute;
     left: 0;
@@ -714,7 +713,7 @@ img{
     transition: 0.5s;
 }
 
-#service .service-item .single-information-box .btn-box .play-store-btn::after {
+.btn-box .play-store-btn::after {
     content: '';
     position: absolute;
     left: 0;
@@ -728,7 +727,7 @@ img{
     transition: 0.5s;
 }
 
-#service .service-item .single-information-box .btn-box .play-store-btn:hover::after {
+.btn-box .play-store-btn:hover::after {
     opacity: 0;
     visibility: hidden;
 }
@@ -812,19 +811,19 @@ img{
 
 
 /* Section Title Css */
-.section-title {
+.section-content {
     text-align: center;
     max-width: 720px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 30px;
 }
-.section-title h2 {
+.section-content h2 {
     margin-bottom: 0;
     font-size: 40px;
 }
 
-.section-title .bar {
+.bar {
     height: 5px;
     width: 90px;
     background: #cdf1d8;
@@ -833,11 +832,11 @@ img{
     border-radius: 30px;
 }
 
-.section-title .bar::before {
+.bar::before {
     background: #43e794 ;
 }
 
-.section-title .bar::before {
+.bar::before {
     content: '';
     position: absolute;
     left: 0;
@@ -857,7 +856,7 @@ img{
     }
 }
 
-.section-title p {
+.section-content p {
     max-width: 500px;
     margin-left: auto;
     margin-right: auto;
@@ -1180,3 +1179,98 @@ img{
     bottom: 10px;
     opacity: 1;
 }
+
+
+/* Banking App Service Area Css */
+#banking-app-service {
+    padding-top: 90px;
+}
+
+/* Banking App Service Area > .app-image Css */
+#banking-app-service .app-image{
+    position: relative;
+    z-index: 1;
+    text-align: left;
+    overflow: hidden;
+}
+
+.app-image .circle-img {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-55%);
+    z-index: -1;
+    right: 0;
+    margin: 0 auto;
+}
+
+.app-image .circle-img img {
+    animation: circle-rotate 35s linear infinite;
+}
+
+@keyframes circle-rotate {
+    from {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+
+/* Banking App Service Area > .app-image > .app-main-image Css */
+#banking-app-service .banking-app-service-area .app-image .app-main-image img:nth-child(2) {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+/* Banking App Service Area > .banking-app-service-area > .app-download-content Css */
+#banking-app-service .banking-app-service-area .section-content {
+    text-align: start;
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    padding-left: 20px;
+    margin-top: -45px;
+}
+
+#banking-app-service .banking-app-service-area .section-content .bar {
+    margin: 20px 0 25px;
+}
+
+#banking-app-service .banking-app-service-area .section-content p {
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    line-height: 1.7;
+    margin-bottom: 15px;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+#banking-app-service .banking-app-service-area .section-content .btn-box {
+    margin-top: 30px;
+}
+
+#banking-app-service .banking-app-service-area .section-content .btn-box a i{
+    left: 16px;
+}
+
+#banking-app-service .banking-app-service-area .section-content .btn-box .app-store-btn i::before,
+#banking-app-service .banking-app-service-area .section-content .btn-box .play-store-btn i::before {
+    font-size: 35px;
+}
+
+#banking-app-service .banking-app-service-area .section-content .btn-box a span{
+    font-size: 18px;
+}
+
+#banking-app-service .banking-app-service-area .section-content .btn-box .app-store-btn,
+#banking-app-service .banking-app-service-area .section-content .btn-box .play-store-btn {
+    padding: 12px 25px 12px 60px;
+}
+
