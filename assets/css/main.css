@@ -70,6 +70,7 @@ body{
     margin: 0;
     font-family: "Roboto", sans-serif;
     font-size: 16px;
+    overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5, h6, 
@@ -220,6 +221,8 @@ img{
 
 #header .navbar-area .header-nav .navbar .navbar-nav .nav-item a {
     color: #0e314c;
+    transition: all 0s ease;
+    border-bottom: none;
 }
 
 #header .navbar-area .header-nav .navbar .navbar-nav .nav-item  a:hover {
