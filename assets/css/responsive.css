@@ -1,6 +1,9 @@
 
-/* On screens that are 1150px */
-@media only screen and (max-width: 1150px) {
+/* 
+    ##Device = Mobiles, Tablets, Ipads (portrait)
+    ##Screen = B/w 0px to 1024px
+*/
+@media only screen and (max-width: 1024px) {
     /* Responsive Menu Toggle  */
     /* #header > .navbar-area > #menu-toggle Effect Css */
     #menu-toggle {
@@ -158,7 +161,7 @@
         padding: 8px 0;
     }
     
-    #header .navbar-area .header-nav .navbar .navbar-nav .nav-item a:hover, #header .navbar-area .header-nav .navbar .navbar-nav .nav-item.active a {
+    #header .navbar-area .header-nav .navbar ul li a {
         color: #95979d;
         border-bottom: 1px solid rgba(255, 255, 255, .15);
     }
@@ -202,15 +205,43 @@
     #header .navbar-area .sidebar-menu .sub-toggle.open svg {
         transform: rotate(-90deg);
     }
+
+
+    /* #banner > .banner-image-circle > .banner-image */
+    #banner .banner-image-circle .banner-image .banner-image-left {
+        left: 0%;
+    }
+
+    #banner .banner-image-circle .banner-image .banner-image-right {
+        right: 0%;
+    }
 }
 
-/* On screens that are 768px */
+/* 
+    ##Screen = B/w 0px to 991px
+*/
+@media only screen and (max-width: 991px) {
+    #banner .banner-content {
+        text-align: center;
+        padding-top: 50px;
+    }
+    #banner .banner-content p {
+        max-width: 80%;
+        margin: 20px auto auto;
+    }
+}
+
+
+/* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 0px to 767px
+*/
 @media only screen and (max-width: 768px) {
     #header .top-header .header-right-content ul li {
         width: 100%;
-        padding-left: 0;
-        margin-right: 0;
-        margin-top: 5px;
+        padding: 0;
+        margin: 0;
+        margin-top: 8px;
         text-align: center;
     }
 
@@ -219,4 +250,55 @@
         left: -5px;
     }
 
+    /* banner Section Css */
+    #banner {
+        padding-top: 250px;
+    }
+
+    #banner .banner-image-circle .banner-image .banner-image-left,
+    #banner .banner-image-circle .banner-image .banner-image-right {
+        display: none;
+    }
+}
+
+/* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 0px to 478px
+*/
+@media only screen and (max-width: 480px) {
+    #banner .banner-image-circle .banner-image .banner-image-center img {
+        max-width: 100%;
+        height: auto;
+    }
+    #banner .banner-content h1 {
+        font-size: 30px;
+    }
+    
+    #banner .banner-image-circle .circle-1 {
+        width: 50px;
+        height: 50px;
+    }
+
+    #banner .banner-image-circle .circle-2 {
+        width: 40px;
+        height: 40px;
+    }
+
+    #banner .banner-image-circle .circle-3 {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+
+/* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 0px to 320px
+*/
+@media only screen and (max-width: 320px) {
+    
+
+    #banner .banner-content p {
+        max-width: 100%;
+    }
 }

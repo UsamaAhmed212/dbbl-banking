@@ -177,10 +177,8 @@ img{
 }
 
 #header .header-nav .navbar {
-    padding-right: 0;
-    padding-top: 0;
-    padding-left: 0;
-    padding-bottom: 0;
+    padding: 0;
+    overflow: hidden;
 }
 
 
@@ -299,6 +297,7 @@ img{
     position: relative;
     background: transparent url(../../images/shape-bg.png) left bottom no-repeat;
     padding: 210px 0px  100px 0px;
+    overflow: hidden;
     z-index: 1;
 }
 
@@ -306,7 +305,7 @@ img{
 /* Banner Area > Banner Content Css */
 #banner .banner-content h1 {
     margin-bottom: 0;
-    font-size: 52px;
+    font-size: 40px;
     font-weight: bold;
 }
 
