@@ -228,6 +228,20 @@
         max-width: 80%;
         margin: 20px auto auto;
     }
+    /* biometric-account > .biometric-images Css */
+    #biometric-account {
+        padding-top: 50px;
+    }
+
+    #biometric-account .biometric-area .biometric-images .biometric-image {
+        width: 31%;
+        margin: 1%;
+    }
+
+    #biometric-account .biometric-area .biometric-content {
+        padding-top: 50px;
+    }
+
 }
 
 
@@ -258,12 +272,27 @@
     #banner .banner-image-circle .banner-image .banner-image-right {
         display: none;
     }
-
     
     /* #service Section Css */
     #service {
         padding-top: 0;
     }
+
+    /* biometric-account > .biometric-images Css */
+    #biometric-account .biometric-area .biometric-images {
+        padding: 0 2%;
+    }
+
+    #biometric-account .biometric-area .biometric-images .biometric-image {
+        width: 48%;
+    }
+
+    /* biometric-account > .biometric-content Css */
+    #biometric-account .biometric-area .biometric-content {
+        padding-right: 3%;
+        padding-left: 3%;
+    }
+
 
 }
 
@@ -290,12 +319,26 @@
         margin-right: 5px;
     }
 
+    /* #biometric-account > .biometric-area > .biometric-content */
+    #biometric-account .biometric-area .biometric-content .biometric-heading {
+        display: block;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+
+    #biometric-account .biometric-area .biometric-content .biometric-heading > span {
+        width: 65%;
+        display: block;
+        text-align: end;
+        margin: 0 auto;
+    }
+
 }
 
 
 /* 
     ##Device = Most of the Smartphones Mobiles (Portrait)
-    ##Screen = B/w 0px to 478px
+    ##Screen = B/w 0px to 480px
 */
 @media only screen and (max-width: 480px) {
     #banner .banner-image-circle .banner-image .banner-image-center img {
@@ -320,6 +363,22 @@
         width: 35px;
         height: 35px;
     }
+
+    /* #biometric-account > .biometric-area > .biometric-content */
+    #biometric-account .biometric-area .biometric-content .biometric-heading h2 {
+        font-size: 30px;
+    }
+
+    #biometric-account .biometric-area .biometric-content .biometric-service-item h5 {
+        padding-left: 8px;
+        font-size: 23px;
+    }
+
+    #biometric-account .biometric-area .biometric-content .biometric-service-item {
+        display: flex;
+        align-items: center;
+    }
+    
 }
 
 
@@ -333,9 +392,20 @@
         max-width: 100%;
     }
 
-
     /* #service > .service-item Csss */
     #service .service-item .btn-box a {
         margin: 5px 0;
     }
+
+    /* biometric-account > .biometric-images Css */
+    #biometric-account .biometric-area .biometric-images .biometric-image {
+        width: 98%;
+    }
+
+    /* #biometric-account > .biometric-area > .biometric-content */
+    #biometric-account .biometric-area .biometric-content .biometric-heading > span {
+        width: 100%;
+        text-align: center;
+    }
+
 }
