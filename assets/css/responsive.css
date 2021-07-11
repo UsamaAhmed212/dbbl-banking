@@ -320,7 +320,21 @@
         margin-top: -10%;
         margin-right: 20%;
     }
-    
+
+    /* #remittances-paid > .remittances-area > .remittances-content */
+    #remittances-paid .remittances-area .remittances-content .remittances-item-header {
+        display: none;
+    }
+
+    #remittances-paid .remittances-area .remittances-content .exchange-company-name {
+        margin: 10px auto;
+        text-align: center;
+    }
+
+    #remittances-paid .remittances-area .remittances-content .exchange-company-logo {
+        margin: 10px auto;
+    }
+
 
 }
 
@@ -410,7 +424,16 @@
         display: flex;
         align-items: center;
     }
-    
+
+    /* #secure-banking-through-finger > .secure-banking-through-finger-content */
+    #secure-banking-through-finger .secure-banking-through-finger-content h2 {
+        font-size: 18px;
+    }
+
+    /* #remittances-paid > .remittances-area > .remittances-content */
+    #remittances-paid .remittances-area .remittances-content h2 {
+        font-size: 18px;
+    }
 }
 
 
@@ -421,6 +444,11 @@
 @media only screen and (max-width: 320px) {
     #header .navbar-area .sidebar-menu {
         width: 100%;
+        left: -100%;
+    }
+
+    #header .navbar-area .sidebar-menu.active {
+        transform: translateX(100%);
     }
 
     /* #banner Css */
@@ -444,6 +472,7 @@
     }
 
     #biometric-account .biometric-area .biometric-content .biometric-service-item h5 {
+        display: block;
         text-align: center;
         padding-left: 0;
         padding-right: 0;
