@@ -344,7 +344,15 @@
         margin: 10px auto;
     }
 
+    /* #banking-service-charge > .banking-service-content > .banking-service-item */
+    #banking-service-charge .banking-service-content .banking-service-item h2 {
+        text-align: center;
+    }
 
+    #banking-service-charge .banking-service-content .banking-service-header h2,
+    #banking-service-charge .banking-service-content .banking-service-item h2 {
+        margin: 5px 0;
+    }
 }
 
 
@@ -434,7 +442,7 @@
     #secure-banking-through-finger .secure-banking-through-finger-content h2 {
         font-size: 18px;
     }
-
+    
 }
 
 
