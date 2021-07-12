@@ -254,7 +254,16 @@
     ##Device = Low Resolution Tablets, Mobiles (Landscape)
     ##Screen = B/w 0px to 767px
 */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
+    .section-content h2 {
+        font-size: 30px;
+    }
+    
+    /* #remittances-paid > .remittances-area > .remittances-content */
+    #remittances-paid .remittances-area .remittances-content h2 {
+        font-size: 18px;
+    }
+    
     #header .top-header .header-right-content ul li {
         width: 100%;
         padding: 0;
@@ -383,10 +392,6 @@
     ##Screen = B/w 0px to 480px
 */
 @media only screen and (max-width: 480px) {
-    .section-content h2 {
-        font-size: 30px;
-    }
-
     #banner .banner-image-circle .banner-image .banner-image-center img {
         max-width: 100%;
         height: auto;
@@ -430,10 +435,6 @@
         font-size: 18px;
     }
 
-    /* #remittances-paid > .remittances-area > .remittances-content */
-    #remittances-paid .remittances-area .remittances-content h2 {
-        font-size: 18px;
-    }
 }
 
 
