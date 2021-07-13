@@ -371,6 +371,16 @@
         text-align: center;
     }
 
+    /* #atm-transaction-service-charge > .atm-transaction-service-charge-content */
+    #atm-transaction-service-charge {
+        padding-top: 50px;
+    }
+
+    #atm-transaction-service-charge .atm-transaction-service-charge-content .atm-transaction-service-charge-item h2 {
+        text-align: center;
+        margin: 5px 0;
+    }
+
 }
 
 
