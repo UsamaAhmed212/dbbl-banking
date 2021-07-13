@@ -247,6 +247,10 @@
         padding-top: 50px;
     }
 
+    /* #bank-cards > .bank-cards-item-wrapper > .bank-cards-item */
+    #bank-cards .bank-cards-item-wrapper .bank-cards-item {
+        width: 25%;
+    }
 }
 
 
@@ -381,11 +385,20 @@
         margin: 5px 0;
     }
 
+    /* #bank-cards > .bank-cards-item-wrapper > .bank-cards-item */
+    #bank-cards .bank-cards-item-wrapper .bank-cards-item {
+        width: 33.33%;
+    }
+
 }
 
 
 /* ##Screen = B/w 0px to 575px */
 @media only screen and (max-width: 575px) {
+    .section-content p {
+        max-width: 95%;
+    }
+
     /* #service Section Css */
     #service .service-item .single-information-box {
         padding-left: 0;
@@ -418,6 +431,11 @@
         display: block;
         text-align: end;
         margin: 0 auto;
+    }
+
+    /* #bank-cards > .bank-cards-item-wrapper > .bank-cards-item */
+    #bank-cards .bank-cards-item-wrapper .bank-cards-item {
+        width: 50%;
     }
 
 }
@@ -471,6 +489,10 @@
         font-size: 18px;
     }
     
+    /* #bank-cards > .bank-cards-item-wrapper > .bank-cards-item */
+    #bank-cards .bank-cards-item-wrapper .bank-cards-item {
+        padding: 5px;
+    }
 }
 
 
@@ -537,5 +559,13 @@
         margin-right: -15%;
     }
 
+    /* #bank-cards > .bank-cards-item-wrapper > .bank-cards-item */
+    #bank-cards .bank-cards-item-wrapper .bank-cards-item {
+        width: 100%;
+    }
+    /* #bank-cards > .bank-cards-item-wrapper > .bank-cards-item */
+    #bank-cards .bank-cards-item-wrapper .bank-cards-item {
+        padding: 10px;
+    }
 
 }
