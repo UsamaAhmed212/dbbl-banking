@@ -260,6 +260,10 @@
     }
     
     /* #remittances-paid > .remittances-area > .remittances-content */
+    #remittances-paid {
+        padding-top: 50px;
+    }
+
     #remittances-paid .remittances-area .remittances-content h2 {
         font-size: 18px;
     }
@@ -345,6 +349,10 @@
     }
 
     /* #banking-service-charge > .banking-service-content > .banking-service-item */
+    #banking-service-charge {
+        padding-top: 50px;
+    }
+
     #banking-service-charge .banking-service-content .banking-service-item h2 {
         text-align: center;
     }
@@ -353,6 +361,16 @@
     #banking-service-charge .banking-service-content .banking-service-item h2 {
         margin: 5px 0;
     }
+    /* #atm-cards-service-charge > .atm-cards-service-charge-content */
+    #atm-cards-service-charge {
+        padding-top: 50px;
+    }
+
+    #atm-cards-service-charge .atm-cards-service-charge-content .atm-cards-service-charge-item h2 {
+        margin: 5px 0;
+        text-align: center;
+    }
+
 }
 
 
