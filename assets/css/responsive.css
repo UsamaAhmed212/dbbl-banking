@@ -251,6 +251,34 @@
     #bank-cards .bank-cards-item-wrapper .bank-cards-item {
         width: 25%;
     }
+
+    .app-image .circle-img {
+        top: 50%;
+        width: 80%;
+        left: 55%;
+        transform: translate(-50%,-50%);
+    }
+
+    #banking-app-service .banking-app-service-area .app-image .app-main-image img:nth-child(1) {
+        left: 10%;
+        position: relative;
+    }
+    
+    #banking-app-service .banking-app-service-area .app-image .app-main-image img:nth-child(2) {
+        left: 50%;
+        top: 50%;
+        transform: translate(-15%,-50%);
+    }
+    
+    #banking-app-service .banking-app-service-area .section-content {
+        padding: 0 20px;
+        margin-top: 50px;
+        text-align: center;
+    }
+
+    #banking-app-service .banking-app-service-area .section-content .bar  {
+        margin: 15px auto 20px;
+    }
 }
 
 
@@ -359,37 +387,49 @@
 
     #banking-service-charge .banking-service-content .banking-service-item h2 {
         text-align: center;
+        font-size: 18px;
     }
 
     #banking-service-charge .banking-service-content .banking-service-header h2,
     #banking-service-charge .banking-service-content .banking-service-item h2 {
         margin: 5px 0;
     }
+
     /* #atm-cards-service-charge > .atm-cards-service-charge-content */
-    #atm-cards-service-charge {
-        padding-top: 50px;
-    }
-
-    #atm-cards-service-charge .atm-cards-service-charge-content .atm-cards-service-charge-item h2 {
-        margin: 5px 0;
-        text-align: center;
-    }
-
     /* #atm-transaction-service-charge > .atm-transaction-service-charge-content */
+    #atm-cards-service-charge,
     #atm-transaction-service-charge {
         padding-top: 50px;
     }
 
+    #atm-cards-service-charge .atm-cards-service-charge-content .atm-cards-service-charge-item h2,
     #atm-transaction-service-charge .atm-transaction-service-charge-content .atm-transaction-service-charge-item h2 {
-        text-align: center;
         margin: 5px 0;
+        text-align: center;
+        font-size: 18px;
     }
 
+
     /* #bank-cards > .bank-cards-item-wrapper > .bank-cards-item */
+    #banking-app-service {
+        padding-top: 50px;
+    }
+
+    .app-image .circle-img {
+        width: 85%;
+    }
+
     #bank-cards .bank-cards-item-wrapper .bank-cards-item {
         width: 33.33%;
     }
 
+    #bank-cards {
+        padding-top: 50px;
+    }
+
+    #banking-app-service .banking-app-service-area .app-image .app-main-image img:nth-child(1) {
+        left: 5%;
+    }
 }
 
 
@@ -415,10 +455,6 @@
     }
 
     /* #service > .service-item Csss */
-    .btn-box .app-store-btn {
-        margin-right: 5px;
-    }
-
     /* #biometric-account > .biometric-area > .biometric-content */
     #biometric-account .biometric-area .biometric-content .biometric-heading {
         display: block;
@@ -438,6 +474,23 @@
         width: 50%;
     }
 
+    #banking-app-service .banking-app-service-area .app-image .app-main-image img:nth-child(1) {
+        left: 5%;
+    }
+
+    #banking-app-service .banking-app-service-area .app-image .app-main-image img:nth-child(2) {
+        left: 41%;
+    }
+
+    #banking-app-service .banking-app-service-area .app-image .app-main-image img {
+        width: 65%;
+        object-fit: scale-down;
+        max-height: 100%;
+    }
+
+    .app-image .circle-img {
+        left: 50%;
+    }
 }
 
 
@@ -493,6 +546,23 @@
     #bank-cards .bank-cards-item-wrapper .bank-cards-item {
         padding: 5px;
     }
+
+    /* #banking-app-service > .banking-app-service-area > .section-content */
+    #banking-app-service .banking-app-service-area .section-content {
+        padding: 0;
+    }
+
+    #banking-app-service .banking-app-service-area .section-content .btn-box .app-store-btn, #banking-app-service .banking-app-service-area .section-content .btn-box .play-store-btn {
+        padding: 12px 15px 12px 44px;
+    }
+
+    #banking-app-service .banking-app-service-area .section-content .btn-box a span {
+        font-size: 14px;
+    }
+
+    #banking-app-service .banking-app-service-area .section-content .btn-box a i {
+        left: 10px;
+    }
 }
 
 
@@ -517,7 +587,7 @@
 
     /* #service > .service-item Csss */
     #service .service-item .btn-box a {
-        margin: 5px 0;
+        margin: 5px;
     }
 
     /* #biometric-account > .biometric-area > .biometric-content */
@@ -563,9 +633,36 @@
     #bank-cards .bank-cards-item-wrapper .bank-cards-item {
         width: 100%;
     }
+
     /* #bank-cards > .bank-cards-item-wrapper > .bank-cards-item */
     #bank-cards .bank-cards-item-wrapper .bank-cards-item {
         padding: 10px;
+    }
+
+    /* #banking-app-service > .banking-app-service-area .section-content  */
+    #banking-app-service .banking-app-service-area .section-content .btn-box .app-store-btn i::before, #banking-app-service .banking-app-service-area .section-content .btn-box .play-store-btn i::before {
+        font-size: 20px;
+    }
+
+    #banking-app-service .banking-app-service-area .section-content .btn-box .app-store-btn, #banking-app-service .banking-app-service-area .section-content .btn-box .play-store-btn {
+        margin: 5px;
+        padding: 10px 15px 10px 35px;
+    }
+
+    #banking-app-service .banking-app-service-area .app-image .app-main-image img:nth-child(1) {
+        left: 0%;
+    }
+
+    #banking-app-service .banking-app-service-area .app-image .app-main-image img:nth-child(2) {
+        left: 45%;
+    }
+    
+    #banking-app-service .banking-app-service-area .app-image .app-main-image img {
+        width: 70%;
+    }
+
+    .app-image .circle-img {
+        width: 100%;
     }
 
 }
