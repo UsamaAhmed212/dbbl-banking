@@ -219,6 +219,14 @@
     #banner .banner-image-circle .banner-image .banner-image-right {
         right: 0%;
     }
+
+    /* #footer > .footer-area */
+    #footer .footer-area .footer-bottom-area .social-area,
+    #footer .footer-area .footer-bottom-area .copyright-area {
+        text-align: center;
+    }
+
+
 }
 
 /* 
@@ -293,6 +301,10 @@
         padding: 25px 8px;
     }
 
+    /* #footer > .footer-area */
+    #footer {
+        padding-top: 50px;
+    }
     
 }
 
@@ -454,6 +466,11 @@
     #google-map .google-map-area .section-content {
         padding: 0 20px;
         text-align: center;
+    }
+
+    /* #footer > .footer-area */
+    #footer .footer-area .footer-bottom-area .social-area {
+        margin-top: 15px;
     }
 
 }
@@ -705,6 +722,11 @@
 
     .app-image .circle-img {
         width: 100%;
+    }
+
+    /* #footer > .footer-area > .footer-bottom-area */
+    #footer .footer-area .footer-bottom-area .social-area .social-single-item {
+        margin-bottom: 16px;
     }
 
 }
