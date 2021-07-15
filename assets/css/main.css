@@ -1311,7 +1311,7 @@ img{
 #google-map .google-map-area .google-map-content .google-map-viewport {
     width: 100%;
     height: 100%;
-    padding: 35px 0;
+    padding: 35px 30px;
 }
 
 

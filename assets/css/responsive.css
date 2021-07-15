@@ -279,6 +279,21 @@
     #banking-app-service .banking-app-service-area .section-content .bar  {
         margin: 15px auto 20px;
     }
+
+    /* #google-map > .google-map-area */
+    #google-map .google-map-area .google-map-content .service-item {
+        width: 48%;
+        display: inline-block;
+        float: left;
+        margin: 35px  1%;
+    }
+    
+    #google-map .google-map-area .google-map-content .google-map-viewport {
+        min-height: 470px;
+        padding: 25px 8px;
+    }
+
+    
 }
 
 
@@ -430,6 +445,17 @@
     #banking-app-service .banking-app-service-area .app-image .app-main-image img:nth-child(1) {
         left: 5%;
     }
+
+    /* #google-map > .google-map-area  */
+    #google-map {
+        padding-top: 50px;
+    }
+
+    #google-map .google-map-area .section-content {
+        padding: 0 20px;
+        text-align: center;
+    }
+
 }
 
 
@@ -491,6 +517,17 @@
     .app-image .circle-img {
         left: 50%;
     }
+
+    /* #google-map > .google-map-area */
+    #google-map .google-map-area .google-map-content .service-item {
+        width: 100%;
+        margin: 25px 0;
+    }
+
+    #google-map .google-map-area .google-map-content .google-map-viewport {
+        padding: 25px 0px;
+    }
+
 }
 
 
@@ -562,6 +599,11 @@
 
     #banking-app-service .banking-app-service-area .section-content .btn-box a i {
         left: 10px;
+    }
+
+    /* #google-map > .google-map-area  */
+    #google-map .google-map-area .section-content {
+        padding: 0;
     }
 }
 
