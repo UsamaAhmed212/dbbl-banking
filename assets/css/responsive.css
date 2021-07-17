@@ -1,3 +1,10 @@
+/*  min-width: 1024px*/
+@media only screen and (min-width: 1024px) {
+    div#navbarNavDropdown {
+        padding-right: 66px;
+    }
+}
+
 /* 
     ##Device = Mobiles, Tablets, Ipads (portrait)
     ##Screen = B/w 0px to 1024px
