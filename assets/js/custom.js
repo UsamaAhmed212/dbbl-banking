@@ -67,4 +67,30 @@ $(document).ready(function(){
     });
 
 
+    // Smooth Scrolling when clicking an anchor link
+    $('a[href*=\\#]:not([href$=\\#])').click(function(e) {
+        e.preventDefault();
+    
+        $('html, body').animate({
+            scrollTop: $($.attr(this, 'href')).offset().top
+        }, 1000);
+    });
+
+
+    // Add/remove class with jquery based on vertical scroll
+    $(window).scroll(function(){
+        if ($(this).scrollTop() > 200) {
+            $('.go-top').addClass('active');
+        } else {
+            $('.go-top').removeClass('active');
+        }
+    });
+
+    // Scroll to the top when click (.go-top)
+    $(".go-top").click(function() {
+        $("html, body").animate({ 
+            scrollTop: 0 
+        }, 1000);
+    });
+
 });
