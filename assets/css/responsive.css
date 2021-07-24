@@ -1,3 +1,19 @@
+/* 
+    ##Device = Mobiles, Tablets, Ipads (portrait)
+    ##Screen = B/w 0px to 1199px
+*/
+@media only screen and (max-width: 1199px) {
+    /* Banking App Service Area Css */
+    #banking-app-service .banking-app-service-area .app-image .app-main-image img:nth-child(1) {
+        right: 8%;
+    }
+
+    #banking-app-service .banking-app-service-area .app-image .app-main-image img:nth-child(2) {
+        right: 3%;
+    }
+}
+
+
 /*  min-width: 1024px*/
 @media only screen and (min-width: 1024px) {
     div#navbarNavDropdown {
@@ -250,7 +266,7 @@
     }
     /* biometric-account > .biometric-images Css */
     #biometric-account {
-        padding-top: 50px;
+        margin-top: -30px;
     }
 
     #biometric-account .biometric-area .biometric-images .biometric-image {
@@ -274,20 +290,17 @@
         transform: translate(-50%,-50%);
     }
 
+    /* Banking App Service Area Css */
     #banking-app-service .banking-app-service-area .app-image .app-main-image img:nth-child(1) {
         left: 10%;
-        position: relative;
     }
-    
+
     #banking-app-service .banking-app-service-area .app-image .app-main-image img:nth-child(2) {
-        left: 50%;
-        top: 50%;
-        transform: translate(-15%,-50%);
+        right: 17%;
     }
     
     #banking-app-service .banking-app-service-area .section-content {
-        padding: 0 20px;
-        margin-top: 50px;
+        padding: 100px 20px 0px 20px;
         text-align: center;
     }
 
@@ -307,11 +320,6 @@
         min-height: 470px;
         padding: 25px 8px;
     }
-
-    /* #footer > .footer-area */
-    #footer {
-        padding-top: 50px;
-    }
     
 }
 
@@ -327,7 +335,7 @@
     
     /* #remittances-paid > .remittances-area > .remittances-content */
     #remittances-paid {
-        padding-top: 50px;
+        margin-top: -40px;
     }
 
     #remittances-paid .remittances-area .remittances-content h2 {
@@ -379,7 +387,7 @@
 
     /* #secure-banking-through-finger > .secure-banking-through-finger-content */
     #secure-banking-through-finger {
-        padding-top: 50px;
+        margin-top: -40px;
     }
 
     #secure-banking-through-finger .secure-banking-through-finger-content .secure-banking-through-finger-items-left {
@@ -416,7 +424,7 @@
 
     /* #banking-service-charge > .banking-service-content > .banking-service-item */
     #banking-service-charge {
-        padding-top: 50px;
+        margin-top: -40px;
     }
 
     #banking-service-charge .banking-service-content .banking-service-item h2 {
@@ -433,7 +441,7 @@
     /* #atm-transaction-service-charge > .atm-transaction-service-charge-content */
     #atm-cards-service-charge,
     #atm-transaction-service-charge {
-        padding-top: 50px;
+        margin-top: -40px;
     }
 
     #atm-cards-service-charge .atm-cards-service-charge-content .atm-cards-service-charge-item h2,
@@ -445,10 +453,6 @@
 
 
     /* #bank-cards > .bank-cards-item-wrapper > .bank-cards-item */
-    #banking-app-service {
-        padding-top: 50px;
-    }
-
     .app-image .circle-img {
         width: 85%;
     }
@@ -458,16 +462,27 @@
     }
 
     #bank-cards {
-        padding-top: 50px;
+        margin-top: -40px;
+    }
+
+
+    /* Banking App Service Area Css */
+    #banking-app-service {
+        margin-top: -40px;
     }
 
     #banking-app-service .banking-app-service-area .app-image .app-main-image img:nth-child(1) {
-        left: 5%;
+        left: 8%;
     }
+
+    #banking-app-service .banking-app-service-area .app-image .app-main-image img:nth-child(2) {
+        left: 38%;
+    }
+
 
     /* #google-map > .google-map-area  */
     #google-map {
-        padding-top: 50px;
+        margin-top: -40px;
     }
 
     #google-map .google-map-area .section-content {
@@ -524,12 +539,13 @@
         width: 50%;
     }
 
+    /* #banking-app-service Css */
     #banking-app-service .banking-app-service-area .app-image .app-main-image img:nth-child(1) {
-        left: 5%;
+        left: 4%;
     }
 
     #banking-app-service .banking-app-service-area .app-image .app-main-image img:nth-child(2) {
-        left: 41%;
+        left: 33%;
     }
 
     #banking-app-service .banking-app-service-area .app-image .app-main-image img {
@@ -539,7 +555,7 @@
     }
 
     .app-image .circle-img {
-        left: 50%;
+        left: 51%;
     }
 
     /* #google-map > .google-map-area */
@@ -610,7 +626,7 @@
 
     /* #banking-app-service > .banking-app-service-area > .section-content */
     #banking-app-service .banking-app-service-area .section-content {
-        padding: 0;
+        padding: 90px 0px 0px 0px;
     }
 
     #banking-app-service .banking-app-service-area .section-content .btn-box .app-store-btn, #banking-app-service .banking-app-service-area .section-content .btn-box .play-store-btn {
@@ -716,11 +732,11 @@
     }
 
     #banking-app-service .banking-app-service-area .app-image .app-main-image img:nth-child(1) {
-        left: 0%;
+        left: -4%;
     }
 
     #banking-app-service .banking-app-service-area .app-image .app-main-image img:nth-child(2) {
-        left: 45%;
+        left: 33%;
     }
     
     #banking-app-service .banking-app-service-area .app-image .app-main-image img {
@@ -728,7 +744,7 @@
     }
 
     .app-image .circle-img {
-        width: 100%;
+        width: 90%;
     }
 
     /* #footer > .footer-area > .footer-bottom-area */

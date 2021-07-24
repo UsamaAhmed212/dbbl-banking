@@ -768,9 +768,12 @@ img{
 
 /* Biometric Account section Css */
 #biometric-account {
-    padding-top: 80px;
+    overflow: hidden;
 }
 
+#biometric-account .biometric-area {
+    padding-top: 80px;
+}
 
 /* Biometric Account section > biometric-area > .biometric-images Css */
 #biometric-account .biometric-area .biometric-images .biometric-image {
@@ -790,7 +793,11 @@ img{
 }
 
 
-/* Biometric Account section > biometric-area > .biometric-content > .biometric-heading Css */
+/* Biometric Account section > biometric-area Css */
+#biometric-account .biometric-service-items {
+    padding: 10px 0;
+}/* Biometric Account section > biometric-area > .biometric-content > .biometric-heading Css */
+
 #biometric-account .biometric-area .biometric-content .biometric-heading {
     display: inline-block;
     text-align: end;
@@ -899,6 +906,10 @@ img{
 
 /* Secure Banking Through Finger Area */
 #secure-banking-through-finger {
+    overflow: hidden;
+}
+
+#secure-banking-through-finger .secure-banking-through-finger-area {
     padding-top: 90px;
 }
 
@@ -975,6 +986,10 @@ img{
 
 /*  Remittances Paid Section Css */
 #remittances-paid {
+    overflow: hidden;
+}
+
+#remittances-paid .remittances-area {
     padding-top: 90px;
 }
 
@@ -1020,8 +1035,14 @@ img{
 
 /*  Banking Service Charge Css */
 #banking-service-charge {
+    overflow: hidden;
+}
+
+#banking-service-charge .banking-service-charge-area {
     padding-top: 90px;
 }
+
+
 /* Banking Service Charge > .banking-service-content > .banking-service-header Css  */
 #banking-service-charge .banking-service-content .banking-service-header {
     text-align: center;
@@ -1058,6 +1079,10 @@ img{
 
 /* ATM Cards Services Charges */
 #atm-cards-service-charge {
+    overflow: hidden;
+}
+
+#atm-cards-service-charge .atm-cards-service-charge-area {
     padding-top: 90px;
 }
 
@@ -1090,6 +1115,10 @@ img{
 
 /* ATM Cards Services Charges */
 #atm-transaction-service-charge {
+    overflow: hidden;
+}
+
+#atm-transaction-service-charge .atm-transaction-service-charge-area {
     padding-top: 90px;
 }
 
@@ -1122,6 +1151,10 @@ img{
 
 /* Bank Cards Section Css */
 #bank-cards {
+    overflow: hidden;
+}
+
+#bank-cards .bank-cards-area {
     padding-top: 90px;
 }
 
@@ -1137,8 +1170,6 @@ img{
     background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 8px;
-    -webkit-transition: all .2s ease-in-out;
-    transition: all .2s ease-in-out;
     display: inline-block;
     max-width: 100%;
     height: auto;
@@ -1224,15 +1255,17 @@ img{
 
 /* Banking App Service Area Css */
 #banking-app-service {
+    overflow: hidden;
+}
+
+#banking-app-service .banking-app-service-area {
     padding-top: 90px;
 }
 
 /* Banking App Service Area > .app-image Css */
-#banking-app-service .app-image{
-    position: relative;
+#banking-app-service .app-image {
     z-index: 1;
     text-align: left;
-    overflow: hidden;
 }
 
 .app-image .circle-img {
@@ -1262,10 +1295,16 @@ img{
 
 
 /* Banking App Service Area > .app-image > .app-main-image Css */
+#banking-app-service .banking-app-service-area .app-image .app-main-image img:nth-child(1) {
+    position: relative;
+    right: 6%;
+    top: 0%;
+}
+
 #banking-app-service .banking-app-service-area .app-image .app-main-image img:nth-child(2) {
     position: absolute;
-    right: 0;
-    top: 0;
+    right: 13%;
+    top: 0%;
 }
 
 /* Banking App Service Area > .banking-app-service-area > .app-download-content Css */
@@ -1317,6 +1356,10 @@ img{
 
 /* Google Map Area */
 #google-map {
+    overflow: hidden;
+}
+
+#google-map .google-map-area {
     padding-top: 90px;
 }
 
@@ -1350,8 +1393,12 @@ img{
 
 /* Footer Area Css */
 #footer {
-    padding-top: 90px;
+    overflow: hidden;
     background-color: #323232;
+}
+
+#footer .footer-area {
+    padding-top: 90px;
 }
 
 /* Footer Area > .footer-top-area Css */
@@ -1517,8 +1564,6 @@ img{
     border-radius: 5px;
     font-size: 18px;
     margin-left: 8px;
-    -webkit-transition: all .35s ease-in-out;
-    transition: all .35s ease-in-out;
 }
 
 #footer .footer-area .footer-bottom-area .social-area .social-single-item:first-child {
@@ -1527,10 +1572,13 @@ img{
 
 #footer .footer-area .footer-bottom-area .social-area .social-single-item a {
     color: #fff;
-
+    border-radius: 5px;
+    display: block;
+    -webkit-transition: all .35s ease-in-out;
+    transition: all .35s ease-in-out;
 }
 
-#footer .footer-area .footer-bottom-area .social-area .social-single-item:hover {
+#footer .footer-area .footer-bottom-area .social-area .social-single-item a:hover {
     background-color: #fb6f62;
 }
 

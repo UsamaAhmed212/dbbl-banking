@@ -3,6 +3,7 @@ $(document).ready(function(){
     $("#menu-toggle").click(function(e){
         e.stopPropagation();
         e.preventDefault();
+        
         $(this).toggleClass('open');
         $(".sidebar-menu").toggleClass("active");
     });
@@ -10,6 +11,7 @@ $(document).ready(function(){
     $(".sidebar-menu-close").click(function(e){
         e.stopPropagation();
         e.preventDefault();
+
         $("#menu-toggle").removeClass('open');
         $(".sidebar-menu.active").removeClass("active");
     });
@@ -18,6 +20,8 @@ $(document).ready(function(){
     // Close or Hide .sidebar-menu when Click Outside 
     $(document).click(function (e) {
         e.stopPropagation();
+        e.preventDefault();
+
         var container = $(".sidebar-menu");
         // If the target of the click isn't the container
         if(!container.is(e.target) && container.has(e.target).length === 0){
@@ -69,8 +73,9 @@ $(document).ready(function(){
 
     // Smooth Scrolling when clicking an anchor link
     $('a[href*=\\#]:not([href$=\\#])').click(function(e) {
+        e.stopPropagation();
         e.preventDefault();
-    
+
         $('html, body').animate({
             scrollTop: $($.attr(this, 'href')).offset().top
         }, 1000);
@@ -78,7 +83,10 @@ $(document).ready(function(){
 
 
     // Add/remove class with jquery based on vertical scroll
-    $(window).scroll(function(){
+    $(window).scroll(function(e){
+        e.stopPropagation();
+        e.preventDefault();
+        
         if ($(this).scrollTop() > 200) {
             $('.go-top').addClass('active');
         } else {
@@ -87,10 +95,59 @@ $(document).ready(function(){
     });
 
     // Scroll to the top when click (.go-top)
-    $(".go-top").click(function() {
+    $(".go-top").click(function(e) {
+        e.stopPropagation();
+        e.preventDefault();
+
         $("html, body").animate({ 
             scrollTop: 0 
         }, 1000);
     });
+
+
+    // window resize and outerWidth event 
+    var x = document.querySelectorAll("#google-map .service-item");
+
+    window.addEventListener('resize', function(e){
+        if (window.outerWidth < 992 && window.outerWidth > 576) {
+            $.each(x, function( index, value ) {
+                if (index % 2 === 0) {
+                    $(this).attr("data-aos", "zoom-out-right");
+                }else {
+                    $(this).attr("data-aos", "zoom-out-left");
+                }
+            });
+        }else if (window.outerWidth > 992) {
+            $.each(x, function( index, value ) {
+                if (index < 2) {
+                    $(this).attr("data-aos", "zoom-out-right");
+                }else {
+                    $(this).attr("data-aos", "zoom-out-left");
+                }
+            });
+        }else if (window.outerWidth < 576) {
+            $.each(x, function( index, value ) {
+                $(this).attr("data-aos", "zoom-out");
+            });
+        }
+    });
+
+    if (window.outerWidth < 992 && window.outerWidth > 576) {
+        $.each(x, function( index, value ) {
+            if (index % 2 === 0) {
+                $(this).attr("data-aos", "zoom-out-right");
+            }else {
+                $(this).attr("data-aos", "zoom-out-left");
+            }
+        });
+    }else if (window.outerWidth > 992) {
+        $.each(x, function( index, value ) {
+            if (index < 2) {
+                $(this).attr("data-aos", "zoom-out-right");
+            }else {
+                $(this).attr("data-aos", "zoom-out-left");
+            }
+        });
+    }
 
 });
